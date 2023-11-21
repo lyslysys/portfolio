@@ -38,7 +38,7 @@
     <main id="fullpage">
         <!-- intro------- -->
         <section class="section se-1" >
-            <div class="container">
+            <div class="container main">
                 <div class="main-box" >
                     <div class="title">
                         <h4>2023</h4>
@@ -57,9 +57,7 @@
                 </div>
                 <div class="right-text">
                     <h1>LEE YEON SU</h1>
-                    <h1 class="name tshadow">LEE YEON SU</h1>
                     <h1>WEB DESIGN</h1>
-                    <h1 class="web tshadow">WEB DESIGN</h1>
                 </div>
                 <button class="mouse"><i class="fa-solid fa-computer-mouse"></i></button>
             </div>
@@ -67,7 +65,7 @@
         <!-- about-------- -->
         <section class="section se-2">
             <span class="fade"></span>
-            <div class="right-title">
+            <div class="ab-rt right-title">
                 <h2>ABOUT</h2>
                 <span></span>
             </div>
@@ -128,7 +126,7 @@
         <!-- 리디자인------ -->
         <section class="section se-3">
             <span class="fad"></span>
-            <div class="right-title">
+            <div class="re-rt right-title">
                 <h2>REDESIGN</h2>
                 <span></span>
             </div>
@@ -165,7 +163,7 @@
                             <button><a href="https://lyslysys.github.io/T-subway/">Redesign</a></button>
                         </div>
                         <div class="monitor">
-                            <img class="mock" src="images/subway.png" alt="estee">
+                            <img class="mock" src="images/subway.png" alt="estee"  >
                             <span class="mockbg bg1"></span>
                             <span class="mockbg bg2"></span>
                             <span class="mockbg bg3"></span>
@@ -197,7 +195,7 @@
         <section class="section se-4">
             <span class="fad"></span>
             <div class="container clone">
-                <div class="right-title">
+                <div class="right-title cl-rt">
                     <h2>CLONE CODING</h2>  
                     <span></span>
                 </div>
@@ -223,7 +221,7 @@
         <section class="section se-6">
             <span class="fad"></span>
             <div class="container design">
-                <div class="right-title">
+                <div class="right-title de-rt">
                     <h2>DESIGN</h2>  
                     <span></span>
                 </div>
@@ -249,7 +247,7 @@
         <section class="section se-5">
             <span class="fad"></span>
             <div class="container contact">
-                <div class="right-title">
+                <div class="right-title co-rt">
                     <h2>CONTACT</h2>
                     <span></span>
                 </div>
@@ -303,6 +301,8 @@
     <script>
         var swiper = new Swiper(".mySwiper", {
           effect: "cube",
+          autoplay: true,
+          speed: 4000,
           grabCursor: true,
           loop: true,
           cubeEffect: {

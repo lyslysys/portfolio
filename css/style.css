@@ -25,14 +25,14 @@ header{
     z-index: 100;
 }
 header nav{
-    transform: translateX(28%);
+    transform: translateX(26%);
 }
 header nav ul{
     display: flex;
     justify-content: center;
 }
 header nav ul li{
-    margin: 16px 20px;
+    margin: 20px 20px;
 }
 header nav ul li a{
     transition: all .3s;
@@ -55,8 +55,9 @@ header nav ul li:hover a{
     100%{ transform: translate(2%,10%);}
 }
 .container{
-    width:1200px;
+    width:1400px;
     margin:0 auto;
+    position: relative;
   }
 /* main---------------- */
 .se-1{
@@ -101,11 +102,11 @@ header nav ul li:hover a{
 @keyframes activ{
     0%{
         opacity: 0;
-        right: -140px;
+        right: -100px;
     }
     100%{
         opacity: 1;
-        right: 140px;
+        right: 0px;
     }
 }
 .se-1 .main-box .shadow{
@@ -168,18 +169,13 @@ header nav ul li:hover a{
     width: 300px;
     height: 200px;
     position: absolute;
-    bottom: 80px; right: 140px;
+    bottom: 80px; right: 0;
     font-size: 25px;
     color: #1c62a0;
     text-align: right;
-    opacity: 02;
 }
 .se-1 .right-text h1{
-    margin: 5px 0;
-}
-.se-1 .right-text .tshadow{
-    opacity: 0.2;
-    transform: translate(15px,-25px);
+    text-shadow: 20px 25px 1px #1c62a044;
 }
 main button.mouse {
     background: transparent;
@@ -202,6 +198,26 @@ main button.mouse {
 /* about--------- */
 .se-2{
     background: url('../images/subbg.png')no-repeat center/cover;
+    position: relative;
+}
+.se-2 .about{
+    width: 1050px;
+    display: flex;
+    justify-content: space-between;
+}
+.se-2 .about.acti{
+    animation: up 1s ease-in;
+    
+}
+@keyframes up{
+    0%{
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 .se-2 .fade{
     display: block;
@@ -221,45 +237,29 @@ main button.mouse {
     0%{width: 0; height: 0; opacity: 1;}
     100%{width: 2000px; height: 1900px; opacity: 0;}
 }
-.section .right-title{
-    transform: rotate(90deg);
-    width: 700px;
-    height: 50px;
+.right-title{
+    width: 70px;
+    height: 700px;
     position: absolute;
-    right: -200px; 
+    right: 5%;
 }
 .right-title h2{
     font-size: 30px;
     color: #FFF;
+    transform: rotate(90deg);
 }
 .right-title span{
-    width: 600px;
-    height: 2px;
+    width: 2px;
+    height: 560px;
     background-color: #FFF;
     display: block;
-    transform: translate(120px, -45px);
+    transform: translate(35px, 50px);
 }
 
 .about .profile-left{
     width: 400px;
     height: 650px;
-    position: relative;
-    position: absolute;
-    top: 170px; left: 420px;
     padding: 0 20px;
-}
-.about .profile-left.active{
-    animation: act 1s ease-in-out;
-}
-@keyframes act {
-    0%{
-        opacity: 0;
-        left: 200px;
-    }
-    100%{
-        opacity: 1;
-        left: 420px;
-    }
 }
 .about .profile-left .profile{
     width: 400px;
@@ -350,10 +350,6 @@ main button.mouse {
 .about .profile-text .infor i{
     margin-right: 20px;
 }
-.about .container{
-    display: flex;
-    justify-content: space-between;
-}
 .about .profile-right.active{
     animation: actii 1s ease-in-out backwards;
 }
@@ -364,23 +360,11 @@ main button.mouse {
     display: flex;
     flex-direction: column;
     position: relative;
-    position: absolute;
-    top: 190px; right: 23%;
-}
-@keyframes actii {
-    0%{
-        opacity: 0;
-        right: 10%;
-    }
-    100%{
-        opacity: 1;
-        right: 23%;
-    }
 }
 .about .profile-tool{   
     width: 400px;
-    height: 200px;
-    margin-bottom: 150px;
+    height: 300px;
+    margin-bottom: 80px;
 }
 .about .profile-tool .tool-imgbox{
     width: 260px;
@@ -416,7 +400,7 @@ main button.mouse {
 }
 .about .profile-edu{
     width: 400px;
-    height: 200px;
+    height: 270px;
     color: #FFF;
 }
 .about .profile-edu h4{
@@ -460,6 +444,14 @@ main button.mouse {
     background: url('../images/bg.png')no-repeat center/cover;
     position: relative;
 }
+
+.se-3 .redesign{
+    position: relative;
+}
+.re-rt span{
+    height: 500px;
+    transform: translate(35px, 90px);
+}
 .se-3 .fad{
     display: block;
     width: 10px;
@@ -474,20 +466,13 @@ main button.mouse {
 .se-3 .fad.fadee{
     animation: scal 1.5s ease-in;
 }
-.se-3 .right-title{
-    top: 470px;
+.se-3 .redesign .swiper{
+    width: 1300px;
+    display: flex;
 }
-.se-3 .right-title span{
-    width: 550px;
-    transform: translate(170px, -45px);
-}
-.se-3 .redesign{
-    position: relative;
-}
-.se-3 .redesign .swiper
-.se-3 .redesign .swiper-wrapper
+
 .se-3 .redesign .swiper-wrapper .swiper-slide{
-    width: 1000px;
+    width: 1300px;
     position: relative;
 }
 .swiper-cube .swiper-cube-shadow:before {
@@ -496,9 +481,10 @@ main button.mouse {
 .se-3 .redesign .swiper-wrapper .swiper-slide .slide-text{
     width: 330px;
     height: 300px;
+    margin-right: 70px;
     color: #fff;
     position: absolute;
-    top: 150px; left: 0;
+    top: 150px; left: 7%;
 }
 .se-3 .redesign .swiper-wrapper .swiper-slide .slide-text h3{
     font-size: 25px;
@@ -556,7 +542,7 @@ main button.mouse {
     width: 600px;
     height: 600px;
     position: absolute;
-    top: 0; left: 500px;
+    top: 0; left: 600px;
     position: relative;
 }
 .se-3 .redesign .monitor .mockbg{
@@ -583,7 +569,7 @@ main button.mouse {
 .se-3 .redesign .mock{
     width: 600px;
     position: absolute;
-    top: 100px; left: 25px;
+    top: 100px; right: -30px;
     animation: none;
     z-index: 2;
     transition: all .5s;
@@ -610,6 +596,21 @@ main button.mouse {
     background: url('../images/bg.png')no-repeat center/cover;
     position: relative;
 }
+.se-4 .clone{
+    position: relative;
+    width: 1300px;
+}
+.cl-rt{
+    top: 15%;
+    right: -7.5%;
+}
+.cl-rt h2{
+    width: 300px;
+}
+.cl-rt span{
+    transform: translate(150px, 70px);
+    height: 430px;
+}
 .se-4 .fad{
     display: block;
     width: 10px;
@@ -628,23 +629,12 @@ main button.mouse {
     0%{width: 0; height: 0; opacity: 1;}
     100%{width: 2000px; height: 1900px; opacity: 0;}
 }
-.se-4 .clone{
-    position: relative;
-}
-.se-4 .right-title{
-    position: absolute;
-    top: 300px; right: -560px;
-}
-.se-4 .right-title span{
-    width: 450px;
-    transform: translate(260px, -45px);
-}
 .se-4 .slide-text{
     width: 330px;
     height: 300px;
     color: #fff;
     position: absolute;
-    top: 150px; left: 0;
+    top: 150px; left: 7%;
 }
 .se-4 .slide-text h3{
     font-size: 25px;
@@ -697,7 +687,7 @@ main button.mouse {
     width: 600px;
     height: 600px;
     position: absolute;
-    top: 0; left: 500px;
+    top: 0; left: 600px;
     position: relative;
 }
 .se-4 .monitor .mockbg{
@@ -723,7 +713,7 @@ main button.mouse {
 }
 .se-4 .mock{
     width: 600px;
-    position: absolute;
+    position: absolute; 
     top: 100px; left: 25px;
     z-index: 2;
     transition: all .5s;
@@ -736,6 +726,13 @@ main button.mouse {
     background: url('../images/bg.png')no-repeat center/cover;
     position: relative;
 }
+.se-6 .design{
+    position: relative;
+}
+.de-rt{
+    right: -11.5%;
+    top: 7%;
+}
 .se-6 h3 img{
     transform: translate(-10px,13px);
     animation: roll 3s ease-in infinite;
@@ -744,14 +741,7 @@ main button.mouse {
     0%{transform: translate(-10px,13px) rotate(0);}
     100%{transform: translate(-10px,13px) rotate(360deg);}
 }
-.se-6 .right-title{
-    position: absolute;
-    top: 450px; right: -200px;
-}
-.se-6 .right-title span{
-    width: 550px;
-    transform: translate(150px, -45px);
-}
+
 .se-6 .fad{
     display: block;
     width: 10px;
@@ -845,6 +835,17 @@ main button.mouse {
     background: url('../images/subbg.png')no-repeat center/cover;
     position: relative;
 }
+.se-5 .contact{
+    position: relative;
+}
+.co-rt{
+    right: -11.5%;
+    top: -6%;
+}
+.co-rt span{
+    height: 520px;
+    transform: translate(35px, 90px);
+}
 .se-5 .fad{
     display: block;
     width: 10px;
@@ -858,17 +859,6 @@ main button.mouse {
 }
 .se-5 .fad.fadee{
     animation: scal 1.5s ease-in;
-}
-.se-5 .contact{
-    position: relative;
-}
-.se-5 .right-title{
-    position: absolute;
-    top: 300px; right: -560px;
-}
-.se-5 .right-title span{
-    width: 550px;
-    transform: translate(170px, -45px);
 }
 .se-5 .contact-me::after{
     content: '';

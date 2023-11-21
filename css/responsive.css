@@ -1,313 +1,198 @@
 @charset "utf-8";
 
-@media screen and (max-width: 1500px){
+
+@media screen and (max-width: 1750px){
     header nav{
-        transform: translateX(20%);
+        transform: translateX(25%);
     }
-    .se-1 .main-box{
-        padding-top: 100px;
+    .cl-rt{
+        right: -2%;
     }
-    .se-1 .right-text{
-        bottom: 150px; right: 130px;
+    .se-6 .design{
+        width: 1300px;
     }
-    .about .profile-left{
-        top: 250px; left: 250px;
+    .de-rt{
+        right: -11%;
     }
-    @keyframes act {
-        0%{
-            opacity: 0;
-            left: 160px;
-        }
-        100%{
-            opacity: 1;
-            left: 250px;
-        }
+    .se-5 .contact{
+        width: 1300px;
     }
-    .about .profile-right{
-        top: 270px; right: 17%;
+    .co-rt{
+        right: -11%;
     }
-    @keyframes actii {
-        0%{
-            opacity: 0;
-            right: 10%;
-        }
-        100%{
-            opacity: 1;
-            right: 17%;
-        }
-    }
-    .se-3 .redesign .swiper{
-        width: 1000px;
-        height: 500px;
-    }
-    .se-3 .redesign .monitor{
-        left: 400px;
-    }
-    .se-4 .clone{
-        width: 1000px;
-    }
-    .se-4 .monitor{
-        left: 400px;
-    }
-    .section .right-title{
-        right: -250px; 
-    }
-    .se-3 .right-title{
-        right: -260px;
-        top: 550px;
-    }
-    .se-4 .right-title{
-        right: -500px;
-        top: 280px;
-    }
-
 }
+@media screen and (max-width: 1600px){
+    header nav{
+        transform: translateX(22%);
+    }
+    .main{
+        width: 1300px;
+    }
+    .cl-rt{
+        right: 3.5%;
+    }
+    .se-6 .design{
+        width: 1200px;
+    }
+    .de-rt{
+        right: -10%;
+    }
+    .se-5 .contact{
+        width: 1200px;
+    }
+    .co-rt{
+        right: -10%;
+    }
+}
+@media screen and (max-width: 1450px){
+    header nav{
+        transform: translateX(18%);
+    }
+    .main{
+        width: 1200px;
+    }
+    .se-3 .redesign .swiper, .se-4 .clone{
+        width: 1100px;
+    }
+    .se-3 .redesign .monitor, .se-4 .monitor{
+        width: 400px;
+        height: 400px;
+    }
+    .se-3 .redesign .monitor .mockbg, .se-4 .monitor .mockbg{
+        width: 450px;
+        height: 400px;
+    }
+    .se-3 .redesign .swiper-wrapper .swiper-slide .slide-text, .se-4 .slide-text{
+        width: 300px;
+        height: 200px;
+        top: 70px;
+    }
+    .se-3 .redesign .mock, .se-4 .mock{
+        width: 400px;
+        top: 80px; right: -30px;
+    }
+    .se-3 .redesign .swiper-wrapper .swiper-slide .slide-text button, .se-4 .slide-text button {
+        font-size: 18px;
+        width: 110px;
+        height: 40px;
+    }
 
-@media screen and (max-width: 1250px){
+    .re-rt{
+        top: 13%;
+    }
+    .se-6 .design-top .sns{
+        width: 240px;
+        height: 240px;
+    }
+    .se-6 .design-top .sns img{
+        width: 170px;
+    }
+    .se-6 .design{
+        width: 1100px;
+    }
+    .se-5 .contact-me .left .card .icon i{
+        font-size: 1.5rem;
+    }
+    .se-5 .contact-me .left .card p{
+        font-size: 18px;
+    }
+    .de-rt{
+        right: -10%;
+    }
+    .cl-rt{
+        right: 1%;
+        top: 0;
+    }
+    .se-5 .contact{
+        width: 1000px;
+    }
+    .co-rt{
+        right: -16%;
+    }
+}
+@media screen and (max-width: 1300px){
     header nav{
         transform: translateX(16%);
     }
-    .container{
-        width:900px;
-        margin:0 auto;
-    }
-    .se-1 .main-box{
-        padding-top: 80px;
+    .main{
+        width: 950px;
     }
     .se-1 .main-box .title h4{
-        font-size: 45px;
+        font-size: 40px;
     }
     .se-1 .main-box .title h2{
-        font-size: 100px;
-    }
-    .se-1 .main-box .shadow{
-        transform: rotateX(180deg) translateY(-140px);
-    }
-    .se-1 .right-text{
-        bottom: 150px; right: 130px;
-    }
-    .about .profile-left{
-        top: 250px; left: 200px;
-    }
-    @keyframes act {
-        0%{
-            opacity: 0;
-            left: 160px;
-        }
-        100%{
-            opacity: 1;
-            left: 200px;
-        }
-    }
-    .about .profile-right{
-        top: 270px; right: 15%;
-    }
-    @keyframes actii {
-        0%{
-            opacity: 0;
-            right: 10%;
-        }
-        100%{
-            opacity: 1;
-            right: 15%;
-        }
-    }
-    .se-3 .redesign .swiper{
-        width: 800px;
-        height: 500px;
-        transform: translateY(50px);
-    }
-    .se-3 .redesign .monitor .mockbg{
-        width: 500px;
-        height: 450px;
-        top: 50px;
-    }
-    .se-3 .redesign .mock{
-        width: 500px;
-        left: 5px;
-    }
-    .se-4 .clone{
-        width: 800px;
-    }
-    .se-4 .monitor .mockbg{
-        width: 500px;
-        height: 450px;
-        top: 50px;
-    }
-    .se-4 .mock{
-        width: 500px;
-        left: 5px;
-    }
-    .section .right-title{
-        right: -250px; 
-    }
-    .se-3 .right-title{
-        right: -260px;
-        top: 550px;
-    }
-    .se-4 .right-title{
-        right: -500px;
-        top: 280px;
-    }
-}
-@media screen and (max-width: 1100px){
-    header nav{
-        transform: translateX(13%);
-    }
-    .about .profile-left{
-        top: 250px; left: 130px;
-    }
-    @keyframes act {
-        0%{
-            opacity: 0;
-            left: 50px;
-        }
-        100%{
-            opacity: 1;
-            left: 130px;
-        }
-    }
-    .about .profile-right{
-        top: 270px; right: 10%;
-    }
-    @keyframes actii {
-        0%{
-            opacity: 0;
-            right: -3%;
-        }
-        100%{
-            opacity: 1;
-            right: 10%;
-        }
-    }
-    .se-3 .redesign .swiper{
-        width: 800px;
-        height: 500px;
-        transform: translateY(50px);
-    }
-    .se-3 .redesign .monitor .mockbg{
-        width: 450px;
-        height: 400px;
-        top: 100px;
-    }
-    .se-3 .redesign .mock{
-        width: 400px;
-        left: 20px; top: 180px;
-    }
-    .se-4 .clone{
-        width: 800px;
-    }
-    .se-4 .monitor .mockbg{
-        width: 450px;
-        height: 400px;
-        top: 100px;
-    }
-    .se-4 .mock{
-        width: 400px;
-        left: 20px; top: 180px;
-    }
-    .section .right-title{
-        right: -290px; 
-    }
-    .se-3 .right-title{
-        right: -290px;
-        top: 600px;
-    }
-    .se-4 .monitor, .se-3 .redesign .monitor{
-        width: 450px;
-        height: 450px;
-    }
-    .se-4 .right-title{
-        right: -430px;
-        top: 280px;
-    }
-}
-@media screen and (max-width: 1000px){
-    header nav{
-        transform: translateX(10%);
-    }
-    .container{
-        width:750px;
-        margin:0 auto;
-    }
-    .se-1 .main-box{
-        margin-top: 130px;
-    }
-    .se-1 .main-box .img-box{
-        width: 500px;
-        height: 300px;
+        font-size: 90px;
     }
     .se-1 .main-box .img-box span{
         width: 350px;
-        height: 130px;
+        height: 150px;
     }
-
-    
-    .about .profile-left{
-        top: 250px; left: 130px;
+    .se-1 .right-text{
+        font-size: 20px;
     }
-    @keyframes act {
-        0%{
-            opacity: 0;
-            left: 50px;
-        }
-        100%{
-            opacity: 1;
-            left: 130px;
-        }
+    .se-1 .main-box .shadow{
+        transform: rotateX(180deg) translateY(-120px);
     }
-    .about .profile-right{
-        top: 270px; right: 10%;
-    }
-    @keyframes actii {
-        0%{
-            opacity: 0;
-            right: -3%;
-        }
-        100%{
-            opacity: 1;
-            right: 10%;
-        }
+    .se-2 .about{
+        width: 900px;
     }
     .se-3 .redesign .swiper{
-        width: 800px;
-        height: 500px;
-        transform: translateY(50px);
-    }
-    .se-3 .redesign .monitor .mockbg{
-        width: 450px;
-        height: 400px;
-        top: 100px;
-    }
-    .se-3 .redesign .mock{
-        width: 400px;
-        left: 20px; top: 180px;
+        width: 900px;
+        transform: translateX(-10%);
     }
     .se-4 .clone{
-        width: 800px;
+        width: 900px;
     }
-    .se-4 .monitor .mockbg{
-        width: 450px;
-        height: 400px;
-        top: 100px;
+    .se-3 .redesign .monitor, .se-4 .monitor{
+        transform: translateX(-30%);
     }
-    .se-4 .mock{
-        width: 400px;
-        left: 20px; top: 180px;
+    .se-6 .design-top {
+        height: 350px;
     }
-    .section .right-title{
-        right: -290px; 
+    .se-6 .design-top .sns{
+        width: 220px;
+        height: 220px;
     }
-    .se-3 .right-title{
-        right: -290px;
-        top: 600px;
+    .se-6 .design-top .sns img{
+        width: 170px;
+        transform: translate(23px,23px);
     }
-    .se-4 .monitor, .se-3 .redesign .monitor{
-        width: 450px;
-        height: 450px;
+    .se-6 .design{
+        width: 950px;
     }
-    .se-4 .right-title{
-        right: -430px;
-        top: 280px;
+    .se-5 .contact-me .left .card{
+        width: 280px;
+    }
+    .de-rt{
+        right: -11.5%;
+    }
+    .cl-rt{
+        right: -2%;
+        top: 0;
+    }
+    .se-5 .contact{
+        width: 900px;
+    }
+    .co-rt{
+        right: -15%;
     }
 }
+@media screen and (max-width: 1150px){
+    header nav{
+        transform: translateX(90%);
+    }
+    .main{
+        width: 800px;
+    }
+    .right-title{
+        display: none;
+    }
+    .se-3 .redesign .swiper{
+        width: 900px;
+        transform: translateX(-15%);
+    }
+    .se-2 .about{
+        width: 800px;
+    }
+}
+

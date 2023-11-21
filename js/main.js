@@ -14,13 +14,13 @@ $(document).ready(function(){
        //options here
         autoScrolling:true,  //기본값 true
         scrollHorizontally: true,
-        sectionsColor: ['#aaa','#bbb','#ccc','#ddd','#eee', "#fff"],
+        // sectionsColor: ['#aaa','#bbb','#ccc','#ddd','#eee', "#fff"],
         navigation: true,
         navigationPosition: 'left',
         navigationTooltips: ['메뉴1','메뉴2','메뉴3','메뉴4','메뉴5', '메뉴6'],
         slidesNavigation: true,
-        keyboardScrolling: false, // 키보드 눌렀을 때 스크롤 (기본값 true)
-        responsiveWidth: 1800,  //1000 이하가 되면 풀페이지 해제하기 
+
+        responsiveWidth: 1000,  //1000 이하가 되면 풀페이지 해제하기 
     
     
        afterLoad: function(anchorLink, index){
@@ -32,11 +32,8 @@ $(document).ready(function(){
                 rightT.classList.add('right')
             }
             if(index == 2) {
-                const Pright = document.querySelector('.profile-right')
-                Pright.classList.add('active')
-
-                const Pleft = document.querySelector('.profile-left')
-                Pleft.classList.add('active')
+                const about = document.querySelector('.se-2 .about')
+                about.classList.add('acti')
 
                 const fade = document.querySelector('.fade')
                 fade.classList.add('fadee')
