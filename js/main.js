@@ -60,6 +60,38 @@ $(document).ready(function(){
             console.log('현재 활성화된 슬라이드 번호는' + slideAnchor)
         }
     })
+
+    $('.leftbox').click(function(){
+        $('.left').fadeIn(300)
+        $('.popupbg > a').fadeIn(300)
+        $('.popupbg').fadeIn(300)
+    })
+    $('.popupbg > a').click(function(){
+        $('.left').fadeOut(300)
+        $('.popupbg > a').fadeOut()
+        $('.popupbg').fadeOut()
+    })
+    $('.popupbg').click(function(){
+        $('.left').fadeOut(300)
+        $('.popupbg > a').fadeOut()
+        $('.popupbg').fadeOut()
+    })
+
+    $('.rightbox').click(function(){
+        $('.right').fadeIn(300)
+        $('.popupbg > a').fadeIn(300)
+        $('.popupbg').fadeIn(300)
+    })
+    $('.popupbg > a').click(function(){
+        $('.right').fadeOut(300)
+        $('.popupbg > a').fadeOut()
+        $('.popupbg').fadeOut()
+    })
+    $('.popupbg').click(function(){
+        $('.right').fadeOut(300)
+        $('.popupbg > a').fadeOut()
+        $('.popupbg').fadeOut()
+    })
     
 })
 
